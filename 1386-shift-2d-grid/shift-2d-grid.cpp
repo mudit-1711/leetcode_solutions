@@ -17,6 +17,7 @@ public:
         grid[0][0]=last;
     }
     vector<vector<int>> shiftGrid(vector<vector<int>>& grid, int k) {
+        //k=k%(grid[0].size());
         while(k--){
             f(grid);
         }
