@@ -1,10 +1,10 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         n=""
-        if s=="0P":
-            return False
-        if s=="P0":
-            return False   
+        # if s=="0P":
+        #     return False
+        # if s=="P0":
+        #     return False   
         s=s.lower()
         print(s)
         for i in s:
