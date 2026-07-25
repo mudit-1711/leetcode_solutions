@@ -1,5 +1,9 @@
-class Solution:
-    def findRepeatedDnaSequences(self, s: str) -> List[str]:
+class Solution(object):
+    def findRepeatedDnaSequences(self, s):
+        """
+        :type s: str
+        :rtype: List[str]
+        """
         ans = []
         mpp = {}
         if len(s) < 10:
@@ -11,3 +15,4 @@ class Solution:
             if value > 1:
                 ans.append(key)
         return ans
+        
