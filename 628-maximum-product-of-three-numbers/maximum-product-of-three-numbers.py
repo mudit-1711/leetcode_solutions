@@ -1,11 +1,20 @@
 class Solution:
     def maximumProduct(self, nums: List[int]) -> int:
-         nums.sort()
-         n=len(nums)
-         if nums[0]<0 and nums[1]<0:
-            if nums[0]*nums[1]*nums[n-1]>nums[n-1]*nums[n-2]*nums[n-3]:
-                return nums[0]*nums[1]*nums[n-1]
-            else:
-                return nums[n-1]*nums[n-2]*nums[n-3]
-         else:
-            return nums[n-1]*nums[n-2]*nums[n-3]
+        mx1 = mx2 = mx3 = -1001
+        mn1 = mn2 = 1001
+        for num in nums:
+            if num >= mx1:
+                mx3 = mx2
+                mx2 = mx1
+                mx1 = num
+            elif num >= mx2:
+                mx3 = mx2
+                mx2 = num
+            elif num > mx3:
+                mx3 = num
+            if num <= mn1:
+                mn2 = mn1
+                mn1 = num
+            elif num < mn2:
+                mn2 = num
+        return max(mx1 * mx2 * mx3, mx1 * mn1 * mn2)
