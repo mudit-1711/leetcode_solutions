@@ -1,5 +1,9 @@
-class Solution:
-    def maximumProduct(self, nums: List[int]) -> int:
+class Solution(object):
+    def maximumProduct(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         mx1 = mx2 = mx3 = -1001
         mn1 = mn2 = 1001
         for num in nums:
