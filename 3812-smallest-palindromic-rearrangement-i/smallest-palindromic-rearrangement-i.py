@@ -1,9 +1,5 @@
 class Solution(object):
     def smallestPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
         freq=26*[0]
         for c in s:
             freq[ord(c)-ord('a')]+=1
