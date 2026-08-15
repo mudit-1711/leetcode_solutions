@@ -1,5 +1,9 @@
-class Solution:
-    def longestSubsequence(self, nums: List[int]) -> int:
+class Solution(object):
+    def longestSubsequence(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         nonzero = False
         x=0
         for num in nums:
