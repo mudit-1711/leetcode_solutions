@@ -1,5 +1,9 @@
-class Solution:
-    def resultArray(self, nums: List[int]) -> List[int]:
+class Solution(object):
+    def resultArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
         arr1=[]
         arr2=[]
         arr1.append(nums[0])
