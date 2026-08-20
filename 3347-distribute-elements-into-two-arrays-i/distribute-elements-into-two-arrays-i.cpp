@@ -15,11 +15,8 @@ public:
                 idx2++;
             }
         }
-        vector<int> ans;
-        for (i = 0; i < arr1.size(); i++)
-            ans.push_back(arr1[i]);
         for (i = 0; i < arr2.size(); i++)
-            ans.push_back(arr2[i]);
-        return ans;
+            arr1.push_back(arr2[i]);
+        return arr1;
     }
 };
