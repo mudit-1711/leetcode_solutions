@@ -1,7 +1,6 @@
 class Solution:
     def shortestBeautifulSubstring(self, s: str, k: int) -> str:
         ans = ""
-
         for i in range(len(s)):
             for j in range(i, len(s)):
                 st = s[i:j+1]
