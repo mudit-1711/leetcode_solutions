@@ -1,5 +1,10 @@
-class Solution:
-    def firstStableIndex(self, nums: list[int], k: int) -> int:
+class Solution(object):
+    def firstStableIndex(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
         n=len(nums)
         mn=n*[0]
         mx=n*[0]
@@ -13,3 +18,4 @@ class Solution:
             if mx[i]-mn[i] <=k :
                 return i
         return -1
+        
