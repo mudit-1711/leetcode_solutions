@@ -14,6 +14,7 @@
 <p><strong class="example">Example 1:</strong></p>
 
 <pre>
+	
 <strong>Input:</strong> s = &quot;(()())(())&quot;
 <strong>Output:</strong> &quot;()()()&quot;
 <strong>Explanation:</strong> 
